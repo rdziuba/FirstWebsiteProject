@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+
+}
+
+body {
+    font-family: 'Roboto';
+    background: url("virus.jpg") no-repeat center center / cover;
+    background-attachment: fixed;
+
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow-x: hidden;
+}
+
+.menu {
+
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    transition: .3s;
+    z-index: 100;
+    font-family: 'Staatliches';
+}
+
+.menu:not(.off),
+.menu.scroll {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.menu h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    font-family: 'Staatliches';
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-family: 'Staatliches';
+}
+
+.menu ul a {
+    padding: 20px 10px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: .6s;
+    border-bottom: 1px solid transparent;
+    font-size: 20px;
+    font-family: 'Staatliches';
+
+}
+
+.menu a:hover {
+    border-bottom-color: white;
+}
+
+.gl h1 {
+    font-size: 40px;
+    color: white;
+    padding: 35px 0;
+   
+
+}
+
+.gl p {
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.content {
+    flex-grow: 1;
+    padding-top: 50px;
+}
+
+i {
+
+    color: white;
+    font-size: 30px;
+}
+
+
+.links {
+    position: absolute;
+    text-align: center;
+    top: 38px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    transition: 0.3s;
+}
+
+.gl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.gl h2 {
+    color: white;
+    padding-bottom: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.stopka {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    flex-shrink: 0;
+}
+
+hr {
+    margin-top: 30px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+section h1{
+    font-size: 30px;
+    color: white;
+    padding: 35px 0;
+    text-align: center;
+}
+section a{
+    font-size: 20px;
+    color:white;
+    text-decoration: none;
+    padding: 35px 0;
+    text-align: center;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.zr a:hover{
+    color:red;
+}
+
+@media(min-width:967px) {
+    .burger {
+        display: none;
+    }
+
+    .off .links,
+    .links {
+        transform: translateX(0);
+
+    }
+
+    .links {
+        display: block;
+        position: unset;
+        background: transparent;
+        width: unset;
+    }
+
+    .menu ul {
+        flex-direction: row;
+
+    }
+
+    .gl h1 {
+        font-size: 60px;
+        color: white;
+        padding: 35px 0;
+        text-align: center;
+
+
+    }
+
+    .gl p {
+        color: white;
+        padding: 20px;
+        font-size: 30px;
+        text-align: justify;
+    }
+
+    .gl h2 {
+        color: white;
+        padding-bottom: 10px;
+        font-size: 40px;
+    }
+
+
+    section h1{
+        font-size: 60px;
+        color: white;
+        padding: 35px 0;
+        text-align: center;
+    }
+    section a{
+        font-size: 30px;
+        color:white;
+        text-decoration: none;
+        padding: 35px 0;
+        text-align: center;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+
+}
