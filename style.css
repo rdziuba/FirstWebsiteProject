@@ -41,6 +41,58 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+.pierwsze  {
+/*    background-color: rgba(0, 0, 0, 0.1);*/
+    margin-top: 40px;
+    text-align: left;
+    font-size: 1.4rem;
+    color: #efefef;
+    letter-spacing: 1px;
+    line-height: 60px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.content .gl .alert {
+    color:red;
+    background-color: rgba(160, 35, 3, 0.37);
+    margin-top: 30px;
+        
+}
+
+.content .gl .chron {
+    margin-top: 50px;
+}
+
+.content .gl .poradnik {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.content .gl span {
+    color:antiquewhite;
+    
+}
+
+.content .inf {
+    color: white;
+    font-size: 2.0rem;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    
+}
+
+.content .inf2 {
+text-align: center;
+line-height: 50px;
+padding: 5px;
+margin: 15px 0 15px 0;
+}
+
+.content .inf2 a:hover {
+    color:aqua;
+    padding: 5px;
+}
 
 .menu h1 {
     text-transform: uppercase;
@@ -65,11 +117,13 @@ body {
     border-bottom: 1px solid transparent;
     font-size: 20px;
     font-family: 'Staatliches';
+    
 
 }
 
 .menu a:hover {
-    border-bottom-color: white;
+    border-bottom-color: aqua;
+    color: aqua;
 }
 
 .gl h1 {
@@ -127,6 +181,9 @@ i {
 }
 
 .stopka {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
     text-align: center;
     color: white;
     font-size: 20px;
@@ -226,3 +283,4 @@ section a{
     }
 
 }
+
