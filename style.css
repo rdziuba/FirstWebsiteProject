@@ -153,6 +153,18 @@ i {
     font-size: 30px;
 }
 
+.inputCenter{
+    margin-left: 100%;
+}
+
+.tabelaR{
+       margin-top: 5%;
+       margin-left: 40%;
+       width: : 30%;
+    color: white;
+    font-weight: : 600;    
+}
+td{width: 50%;}
 
 .links {
     position: absolute;
