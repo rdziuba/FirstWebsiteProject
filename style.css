@@ -164,7 +164,18 @@ i {
     color: white;
     font-weight: : 600;    
 }
-td{width: 50%;}
+.tdR{width: 50%;}
+
+.tdS {
+    width: 20%;
+    color: white;
+}
+
+.S{
+    margin-left: 15%;
+    margin-top: 12%;
+}
+
 
 .links {
     position: absolute;

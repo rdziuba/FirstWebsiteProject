@@ -39,7 +39,7 @@ if (isset($_POST['rejestruj']))
 	 
 	
 
-    // sprawdzamy czy login nie jest już w bazie
+    // sprawdzamy czy login jest już w bazie
     if (mysqli_num_rows(mysqli_query($polaczenie ,"SELECT login FROM konta WHERE login = '".$login."';")) == 0)	
     {   
 		//sprawdzamy czy haslo się zgadza ze standardami znakowymi
@@ -87,7 +87,7 @@ if (isset($_POST['loguj']))
                 <li><a href="index.html">Strona główna</a></li>
                 <li><a href="poradnik.html">Jak postępować?</a></li>
                 <li><a href="aktualnosci.html">Aktualności</a></li>
-                <li><a href="sklep.html">Sklep</a></li>
+                <li><a href="sklep.php">Sklep</a></li>
                 <li><a href="rejestracja.php">Logowanie</a></li>
             </ul>
         </div>
@@ -101,17 +101,17 @@ if (isset($_POST['loguj']))
     
         <table class= "tabelaR">
          <form method="POST" action="rejestracja.php">
-           <tr><td colspan="2"> <center>REJESTRACJA</td> </center>  </tr> 
-           <tr><td>Imie:</td> <td><input type="text" name="Imie"></td>    </tr>
-           <tr><td>Nazwisko:</td> <td><input type="text" name="Nazwisko"></td>    </tr>
-           <tr><td>Login:</td> <td><input type="text" name="Login"></td>    </tr>
-           <tr><td>Hasło:</td> <td><input type="text" name="Haslo"></td>    </tr>
-           <tr><td>Miejscowość</td> <td><input type="text" name="Miejscowosc"></td>    </tr>
-           <tr><td>Ulica:</td> <td><input type="text" name="Ulica"></td>    </tr>
-           <tr><td>Nr mieszkania:</td> <td><input type="text" name="NrMieszkania"></td>    </tr>
-           <tr><td>Kod pocztowy:</td> <td><input type="text" name="KodPocztowy"></td>    </tr>
-           <tr><td>Nr.tel</td> <td><input type="text" name="NrTel"></td>    </tr>
-           <tr>	<td rowspan="2"><input class="inputCenter" type="submit" value="Zarejestruj!" name="rejestruj"></td>
+           <tr><td colspan="2" class="tdR"> <center>REJESTRACJA</td> </center>  </tr> 
+           <tr><td class="tdR">Imie:</td> <td class="tdR"><input type="text" name="Imie"></td>    </tr>
+           <tr><td class="tdR">Nazwisko:</td> <td class="tdR"><input type="text" name="Nazwisko"></td>    </tr>
+           <tr><td class="tdR">Login:</td> <td class="tdR"><input type="text" name="Login"></td>    </tr>
+           <tr><td class="tdR">Hasło:</td> <td class="tdR"><input type="text" name="Haslo"></td>    </tr>
+           <tr><td class="tdR">Miejscowość</td> <td class="tdR"><input type="text" name="Miejscowosc"></td>    </tr>
+           <tr><td class="tdR">Ulica:</td> <td class="tdR"><input type="text" name="Ulica"></td>    </tr>
+           <tr><td class="tdR">Nr mieszkania:</td> <td class="tdR"><input type="text" name="NrMieszkania"></td>    </tr>
+           <tr><td class="tdR">Kod pocztowy:</td> <td class="tdR"><input type="text" name="KodPocztowy"></td>    </tr>
+           <tr><td class="tdR">Nr.tel</td> <td class="tdR"><input type="text" name="NrTel"></td>    </tr>
+           <tr>	<td class="tdR" rowspan="2"><input class="inputCenter" type="submit" value="Zarejestruj!" name="rejestruj"></td>
             </form>
             
             
@@ -119,10 +119,10 @@ if (isset($_POST['loguj']))
         
                 <table class= "tabelaR">
          <form method="POST" action="rejestracja.php">
-           <tr><td colspan="2"> <center>LOGOWANIE</center></td> </center>  </tr> 
+           <tr><td class="tdR" colspan="2"> <center>LOGOWANIE</center></td> </center>  </tr> 
            
-           <tr><td>Login:</td> <td><input type="text" name="Login"></td>    </tr>
-           <tr><td>Hasło:</td> <td><input type="text" name="Haslo"></td>    </tr>
+           <tr><td class="tdR">Login:</td> <td class="tdR"><input type="text" name="Login"></td>    </tr>
+           <tr><td class="tdR">Hasło:</td> <td class="tdR"> <input type="text" name="Haslo"></td>    </tr>
            
            <tr>	<td rowspan="2"><input class="inputCenter" type="submit" value="Zaloguj się!" name="loguj"></td>
             </form>
